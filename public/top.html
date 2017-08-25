@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap-4.0.0/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-theme/bootstrap-theme.min.css" rel="stylesheet">
+<script src="js/jquery-3.2.1/jquery-3.2.1.slim.min.js" type="text/javascript"></script>
+<script src="js/popper-1.12.3/popper.min.js" type="text/javascript"></script>
+<script src="js/bootstrap-4.0.0/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Private CSS / JS -->
+<link rel="stylesheet" href="css/apps.css" rel="stylesheet">
+<script src="js/apps.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="images/logo.ico" />
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+<!--[if lt IE 9]><script src="js/ie/ie8-responsive-file-warning.js"></script><![endif]-->
+<script src="js/ie/ie-emulation-modes-warning.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<title>GTW</title>
+</head>
+<body>
+  <input type="hidden" id="page_name" value="login_page"/><!-- ページ名  -->
+  <!-- ナビゲーション  -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="">
+          <img alt="Metro GTW" src="images/app-title.gif">
+        </a>
+        <a class="navbar-brand" href="">
+          <img alt="Metro GTW" src="images/logo_title.gif">
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- main contents -->
+  <div class="container">
+    <h3>ログイン</h3>
+    <form method="post" action="home.html">
+    <p id="erroe_str"></p>
+      <table class="table">
+        <tr>
+          <th>ユーザID</th>
+          <td>
+            <label for="user_id" class="sr-only">ユーザID</label>
+            <input type="text" name="user_id" class="form-control" placeholder="ユーザID" required autofocus>
+          </td>
+        </tr>
+        <tr>
+          <th>パスワード</th>
+          <td>
+            <label for="password" class="sr-only">パスワード</label>
+            <input type="password" name="password" class="form-control" placeholder="パスワード" required autofocus>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><button id="login" class="btn btn-outline-success" type="submit" value="submit">ログイン</button></td>
+        </tr>
+      </table>
+    </form>
+    <div>
+    </div>
+  </div><!-- /.container -->
+  <!-- fotter  -->
+  <footer class="container-fluid">
+    <small>(c) 2017 Metro,inc. All Rights Reserved.</small>
+  </footer>
+</body>
+</html>

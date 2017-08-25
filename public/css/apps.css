@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+.welcome_name {
+  text-align: right;
+  padding: 5px;
+  background: #e2e2e2;
+  position:botom;
+  width: 100%;
+  bottom:1px;
+  color: #000000;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background: #e2e2e2;
+  position:botom;
+  width: 100%;
+  bottom:1px;
+  color: #ffffff;
+}
+
+.pager {
+    overflow: hidden;
+}
+
+.pager ul {
+    list-style: none;
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+.pager ul li {
+    margin: 0 1px;
+    position: relative;
+    left: -50%;
+    float: left;
+}
+
+.pager ul li span,
+.pager ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 0.6em 1em;
+    border-radius: 3px;
+}
+
+.pager ul li a {
+    background: #EEE;
+    color: #000;
+    text-decoration: none;
+}
+
+.pager ul li a:hover {
+    background: #333;
+    color: #FFF;
+}
