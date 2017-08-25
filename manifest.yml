@@ -1,0 +1,15 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: au-syd.mybluemix.net
+  name: GTWatson-WTB
+  host: GTWatson-WTB
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - GTWatson-WTB-cloudantNoSQLDB
+  - Document Conversion-hq
+  - GTW-Personality Insights-vq
+  - Retrieve and Rank-mw
+  - Visual Recognition-GTW
